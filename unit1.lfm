@@ -3,47 +3,59 @@ object Form1: TForm1
   Height = 529
   Top = 33
   Width = 1516
-  Caption = 'Form1'
+  Caption = 'Linux Kernel Function Length Scanner'
   ClientHeight = 529
   ClientWidth = 1516
   LCLVersion = '4.99.0.0'
   OnCreate = FormCreate
   object BtnBrowse: TButton
-    Left = 29
-    Height = 25
-    Top = 16
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 0
+    Height = 36
+    Top = 0
     Width = 75
-    Caption = 'BtnBrowse'
+    Caption = 'Browse'
     TabOrder = 0
     OnClick = BtnBrowseClick
   end
   object BtnScan: TButton
-    Left = 26
-    Height = 25
-    Top = 52
+    AnchorSideLeft.Control = EditPath
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Owner
+    Left = 847
+    Height = 36
+    Top = 0
     Width = 75
-    Caption = 'BtnScan'
+    Caption = 'Scan'
     TabOrder = 1
     OnClick = BtnScanClick
   end
   object EditPath: TEdit
-    Left = 28
+    AnchorSideLeft.Control = BtnBrowse
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Owner
+    Left = 75
     Height = 36
-    Top = 89
+    Top = 0
     Width = 772
     TabOrder = 2
     Text = 'EditPath'
   end
   object ListViewResults: TListView
-    Left = 26
-    Height = 344
-    Top = 136
-    Width = 1454
+    AnchorSideTop.Control = BtnBrowse
+    AnchorSideTop.Side = asrBottom
+    Left = 0
+    Height = 493
+    Top = 36
+    Width = 1516
+    Align = alBottom
+    Anchors = [akTop, akLeft, akRight, akBottom]
     Columns = <>
     TabOrder = 3
   end
   object SelectDirDialog: TSelectDirectoryDialog
-    Left = 216
-    Top = 41
+    Left = 1000
+    Top = 16
   end
 end
