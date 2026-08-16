@@ -1,0 +1,49 @@
+object Form1: TForm1
+  Left = 223
+  Height = 529
+  Top = 33
+  Width = 1516
+  Caption = 'Form1'
+  ClientHeight = 529
+  ClientWidth = 1516
+  LCLVersion = '4.99.0.0'
+  OnCreate = FormCreate
+  object BtnBrowse: TButton
+    Left = 29
+    Height = 25
+    Top = 16
+    Width = 75
+    Caption = 'BtnBrowse'
+    TabOrder = 0
+    OnClick = BtnBrowseClick
+  end
+  object BtnScan: TButton
+    Left = 26
+    Height = 25
+    Top = 52
+    Width = 75
+    Caption = 'BtnScan'
+    TabOrder = 1
+    OnClick = BtnScanClick
+  end
+  object EditPath: TEdit
+    Left = 28
+    Height = 36
+    Top = 89
+    Width = 772
+    TabOrder = 2
+    Text = 'EditPath'
+  end
+  object ListViewResults: TListView
+    Left = 26
+    Height = 344
+    Top = 136
+    Width = 1454
+    Columns = <>
+    TabOrder = 3
+  end
+  object SelectDirDialog: TSelectDirectoryDialog
+    Left = 216
+    Top = 41
+  end
+end
