@@ -6,7 +6,8 @@ The Linux Kernel Function Length Scanner is a static analysis desktop applicatio
 
 # Usage
 - Launch the application binary.  
-- Click the Browse button to select the target directory path containing your target Linux kernel source code (e.g., /home/user/linux/kernel).  
+- Click the Browse button to select the target directory path containing your target Linux kernel source code
+- (e.g., /home/user/linux/kernel).  
 - Click the Scan button to parse the source tree.  
 - Review the generated list containing:  
   - Length: Total number of lines occupied by the function implementation.  
