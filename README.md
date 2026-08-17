@@ -10,7 +10,7 @@ The Linux Kernel Function Length Scanner is a static analysis desktop applicatio
 - (e.g., /home/user/linux/kernel).  
 - Click the Scan button to parse the source tree.  
 - Review the generated list containing:  
-  1 Length: Total number of lines occupied by the function implementation.  
-  2 Full File Path: Relative path down to the exact source file.  
-  3 Line #: Starting line of the specific function signature.  
-  4 Function Name / Signature: Fully parsed signature declaration.  
+  1. Length: Total number of lines occupied by the function implementation.  
+  2. Full File Path: Relative path down to the exact source file.  
+  3. Line #: Starting line of the specific function signature.  
+  4. Function Name / Signature: Fully parsed signature declaration.  
